@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aboutBirdLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ProgressBar
+        android:id="@+id/pb_loadingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="100dp"/>
+
+    <ImageView
+        android:id="@+id/iv_dogPicture"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/avatars[12]" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_dogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:text="@string/dog_name_placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Bred for:" />
+
+            <TextView
+                android:id="@+id/tv_dogBredFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/bred_for_placeholder" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Temperament:" />
+
+            <TextView
+                android:id="@+id/tv_dogTemperament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wild, Hardworking, Dutiful"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Height (cm):" />
+
+            <TextView
+                android:id="@+id/tv_dogHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11 - 22"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Weight (kg):" />
+
+            <TextView
+                android:id="@+id/tv_dogWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="42 - 56"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Origin:" />
+
+            <TextView
+                android:id="@+id/tv_dogOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scotland"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16sp"
+                android:paddingHorizontal="8dp"
+                android:text="Next image"
+                android:onClick="getNewImage"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

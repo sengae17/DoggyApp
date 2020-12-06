@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dog_icons">
+        <item>@drawable/dog_001</item>
+        <item>@drawable/dog_002</item>
+        <item>@drawable/dog_003</item>
+        <item>@drawable/dog_004</item>
+        <item>@drawable/dog_005</item>
+        <item>@drawable/dog_006</item>
+        <item>@drawable/dog_007</item>
+        <item>@drawable/dog_008</item>
+        <item>@drawable/dog_009</item>
+        <item>@drawable/dog_010</item>
+        <item>@drawable/dog_011</item>
+        <item>@drawable/dog_012</item>
+        <item>@drawable/dog_013</item>
+        <item>@drawable/dog_014</item>
+        <item>@drawable/dog_015</item>
+        <item>@drawable/dog_016</item>
+        <item>@drawable/dog_017</item>
+        <item>@drawable/dog_018</item>
+        <item>@drawable/dog_019</item>
+        <item>@drawable/dog_020</item>
+        <item>@drawable/dog_021</item>
+        <item>@drawable/dog_022</item>
+        <item>@drawable/dog_023</item>
+        <item>@drawable/dog_024</item>
+        <item>@drawable/dog_025</item>
+        <item>@drawable/dog_026</item>
+        <item>@drawable/dog_027</item>
+        <item>@drawable/dog_028</item>
+        <item>@drawable/dog_029</item>
+        <item>@drawable/dog_030</item>
+        <item>@drawable/dog_031</item>
+        <item>@drawable/dog_032</item>
+        <item>@drawable/dog_033</item>
+        <item>@drawable/dog_034</item>
+        <item>@drawable/dog_035</item>
+        <item>@drawable/dog_036</item>
+        <item>@drawable/dog_037</item>
+        <item>@drawable/dog_038</item>
+        <item>@drawable/dog_039</item>
+        <item>@drawable/dog_040</item>
+        <item>@drawable/dog_041</item>
+        <item>@drawable/dog_042</item>
+        <item>@drawable/dog_043</item>
+        <item>@drawable/dog_044</item>
+        <item>@drawable/dog_045</item>
+        <item>@drawable/dog_046</item>
+        <item>@drawable/dog_047</item>
+        <item>@drawable/dog_048</item>
+        <item>@drawable/dog_049</item>
+        <item>@drawable/dog_050</item>
+    </array>
+</resources>
