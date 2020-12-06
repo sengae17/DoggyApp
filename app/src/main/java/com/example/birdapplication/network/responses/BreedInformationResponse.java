@@ -2,6 +2,7 @@ package com.example.birdapplication.network.responses;
 
 import com.google.gson.annotations.SerializedName;
 
+// displays how the response will looks like
 public class BreedInformationResponse {
     @SerializedName("bred_for")
     String bredFor;

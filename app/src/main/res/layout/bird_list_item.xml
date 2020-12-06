@@ -18,9 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="German shepherd"
+        style="@style/BirdName"
         android:textSize="26sp"
-        android:gravity="center_vertical"
-        android:textAlignment="center"/>
+        android:gravity="center_vertical" />
 
 
 </LinearLayout>

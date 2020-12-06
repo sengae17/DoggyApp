@@ -9,6 +9,7 @@ import androidx.room.RoomDatabase;
 import com.example.birdapplication.data.model.Dog;
 import com.example.birdapplication.data.model.DogDao;
 
+//Singleton, database object
 @Database(entities = {Dog.class}, version = 1, exportSchema = false)
 public abstract class DogDatabase extends RoomDatabase {
     private static DogDatabase instance;

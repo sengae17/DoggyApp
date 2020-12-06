@@ -31,6 +31,7 @@ public class DogNetworkDataSource {
         return _downloadedDogs;
     }
 
+    //MAGIC - makes API call, transforms response into dog object
     public void fetchAllDogs() {
         Call<List<BreedInformationResponse>> call = dogsApi.getDogs();
         call.enqueue(new Callback<List<BreedInformationResponse>>() {

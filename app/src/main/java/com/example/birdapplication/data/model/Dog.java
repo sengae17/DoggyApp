@@ -6,6 +6,7 @@ import android.os.Parcelable;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+//specyfing dog object
 @Entity(tableName = "dog_database")
 public class Dog implements Parcelable {
     @PrimaryKey(autoGenerate = false)

@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
     int RC_SIGN_IN = 0;
 
+    //from google documentatition
     @Override
     protected void onStart() {
         super.onStart();
@@ -81,15 +82,14 @@ public class LoginActivity extends AppCompatActivity {
             startActivityForResult(signInIntent, RC_SIGN_IN);
         });
     }
-
+//navigates to the main page if the login is successful
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + " " + model.getDisplayName();
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
-
+//shows a toast
     private void showLoginFailed() {
         Toast.makeText(getApplicationContext(), getString(R.string.login_failed), Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 }

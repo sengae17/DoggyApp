@@ -28,6 +28,9 @@ public class DogRepository {
         dataSource.downloadedDogs.observeForever(dogs -> persistFetchedDogs(dogs));
     }
 
+    //it will look if we have already list of dogs in the database
+    //if not, it will download them from the API, and save them into database
+    //and then return them from the database
     public LiveData<List<Dog>> getDogs() {
         new InitializeDogsDataAsyncTask(dogDao, dataSource).execute();
         return dogDao.getAllDogs();
@@ -60,9 +63,7 @@ public class DogRepository {
         }
     }
 
-    /**
-     * A helper async class for initializing dog data, either from database or API.
-     */
+    //A helper async class for initializing dog data, either from database or API.
     private static class InitializeDogsDataAsyncTask extends AsyncTask<Void, Void, Void> {
         private DogDao dogDao;
         private DogNetworkDataSource dataSource;
@@ -85,9 +86,8 @@ public class DogRepository {
         }
     }
 
-    /**
-     * A helper async class for inserting dogs into the local database
-     */
+
+     //A helper async class for inserting dogs into the local database
     private static class InsertDogsAsyncTask extends AsyncTask<List<Dog>, Void, Void> {
         private DogDao dogDao;
 
@@ -102,9 +102,8 @@ public class DogRepository {
         }
     }
 
-    /**
-     * A helper async function for updating a dog in the local database
-     */
+
+     //A helper async function for updating a dog in the local database
     private static class UpdateDogAsyncTask extends AsyncTask<Dog, Void, Void> {
         private DogDao dogDao;
 

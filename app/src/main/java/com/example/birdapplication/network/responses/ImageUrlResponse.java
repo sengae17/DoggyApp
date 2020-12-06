@@ -2,6 +2,7 @@ package com.example.birdapplication.network.responses;
 
 import com.google.gson.annotations.SerializedName;
 
+//displaying how the response looks like
 public class ImageUrlResponse {
     @SerializedName("url")
     String imageUrl;

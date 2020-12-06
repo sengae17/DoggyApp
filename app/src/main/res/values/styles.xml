@@ -11,7 +11,7 @@
     <style name="BirdName">
         <item name="android:fontFamily">@font/roboto_thin</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">#FDFEFE</item>
+        <item name="android:textColor">#black</item>
         <item name="android:textSize">28sp</item>
         <item name="android:textStyle">bold</item>
     </style>

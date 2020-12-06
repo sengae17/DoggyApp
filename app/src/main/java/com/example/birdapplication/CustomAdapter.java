@@ -16,6 +16,7 @@ import com.example.birdapplication.data.model.Dog;
 
 import java.util.ArrayList;
 import java.util.List;
+//setting up the recycleview
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
     private List<Dog> listOfDogs;
@@ -103,6 +104,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         return listOfDogs.size();
     }
 
+    //takes all my images of drawables and return an icon for each doggy
     private Drawable getRandomIcon(int position) {
         ArrayList<Drawable> icons = new ArrayList<>();
 

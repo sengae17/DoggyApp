@@ -22,6 +22,7 @@ public class DogViewModel extends AndroidViewModel {
         repository = new DogRepository(this.getApplication());
     }
 
+    //returns all dogs from the API or from database
     public LiveData<List<Dog>> getDogs() {
         return repository.getDogs();
     }

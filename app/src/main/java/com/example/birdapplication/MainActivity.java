@@ -26,12 +26,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mViewModel = new ViewModelProvider(this).get(DogViewModel.class);
+        // Observes if there's any changes in the list of dogs. The code below will excetute if there's change.
+        // It will recretate my recycleview with new data
         mViewModel.getDogs().observe(this, dogs -> {
             mDogs = dogs;
             mRecyclerView = findViewById(R.id.recyclerView);
             mAdapter = new CustomAdapter(getApplicationContext(), mDogs);
             mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
             mRecyclerView.setAdapter(mAdapter);
+            //Creates intent and goes into my dog detailed activity
             mAdapter.setOnItemClickListener(position -> {
                 Intent intent = new Intent(getApplicationContext(), DogDetailsActivity.class);
                 intent.putExtra("dog", mDogs.get(position));

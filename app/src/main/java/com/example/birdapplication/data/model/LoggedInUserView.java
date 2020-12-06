@@ -1,8 +1,6 @@
 package com.example.birdapplication.data.model;
 
-/**
- * Class exposing authenticated user details to the UI.
- */
+//Class exposing authenticated user details to the UI.
 public class LoggedInUserView {
     private String displayName;
     //... other data fields that may be accessible to the UI

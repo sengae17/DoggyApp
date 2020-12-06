@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="Bred for:" />
 
@@ -54,7 +54,7 @@
                 android:id="@+id/tv_dogBredFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:text="@string/bred_for_placeholder" />
 
         </LinearLayout>
@@ -67,7 +67,7 @@
             <TextView
                 android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="Temperament:" />
 
@@ -75,6 +75,7 @@
                 android:id="@+id/tv_dogTemperament"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
                 android:text="Wild, Hardworking, Dutiful"/>
 
         </LinearLayout>
@@ -87,7 +88,7 @@
             <TextView
                 android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="Height (cm):" />
 
@@ -95,6 +96,7 @@
                 android:id="@+id/tv_dogHeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
                 android:text="11 - 22"/>
 
         </LinearLayout>
@@ -107,7 +109,7 @@
             <TextView
                 android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="Weight (kg):" />
 
@@ -115,6 +117,7 @@
                 android:id="@+id/tv_dogWeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
                 android:text="42 - 56"/>
 
         </LinearLayout>
@@ -127,7 +130,7 @@
             <TextView
                 android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="Origin:" />
 
@@ -135,24 +138,24 @@
                 android:id="@+id/tv_dogOrigin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
                 android:text="Scotland"/>
 
         </LinearLayout>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:background="@color/colorAccent"
+            android:onClick="getNewImage"
+            android:paddingHorizontal="8dp"
+            android:text="Next image"
+            android:textColor="@android:color/white" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:background="@color/colorAccent"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="16sp"
-                android:paddingHorizontal="8dp"
-                android:text="Next image"
-                android:onClick="getNewImage"/>
 
         </RelativeLayout>
 

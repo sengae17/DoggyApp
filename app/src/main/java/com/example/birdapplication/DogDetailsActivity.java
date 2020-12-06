@@ -35,9 +35,11 @@ public class DogDetailsActivity extends AppCompatActivity {
 
         mViewModel = new ViewModelProvider(this).get(DogViewModel.class);
 
+        //receving the dog object from intent
         Intent i = getIntent();
         this.dog = i.getParcelableExtra("dog");
 
+        //assigning
         ProgressBar progressBar = findViewById(R.id.pb_loadingImage);
         ImageView iv_dogImage = findViewById(R.id.iv_dogPicture);
         TextView dogName = findViewById(R.id.tv_dogName);
@@ -47,6 +49,7 @@ public class DogDetailsActivity extends AppCompatActivity {
         TextView dogTemperament = findViewById(R.id.tv_dogTemperament);
         TextView dogOrigin = findViewById(R.id.tv_dogOrigin);
 
+        //little spinning circle
         progressBar.setVisibility(View.VISIBLE);
         iv_dogImage.setVisibility(View.GONE);
 
@@ -70,6 +73,7 @@ public class DogDetailsActivity extends AppCompatActivity {
         setDogImage(dog.getId());
     }
 
+    //load an image from URl
     private void setDogImage(int breedId) {
         Log.d("DogDetailsActivity", "Fetching an image for a dog " + breedId);
         mViewModel.getDogImageWithCallback(breedId, new Callback<List<ImageUrlResponse>>() {
@@ -85,8 +89,10 @@ public class DogDetailsActivity extends AppCompatActivity {
                 ProgressBar progressBar = findViewById(R.id.pb_loadingImage);
                 ImageView iv_dogImage = findViewById(R.id.iv_dogPicture);
 
+                //helper code that loads the image from URL
                 Glide.with(getApplication()).load(imageUrl).into(iv_dogImage);
 
+                //progressbar is not visible anymore
                 progressBar.setVisibility(View.GONE);
                 iv_dogImage.setVisibility(View.VISIBLE);
 

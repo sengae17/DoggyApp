@@ -8,6 +8,7 @@ import androidx.room.Query;
 
 import java.util.List;
 
+//specifing database operations
 @Dao
 public interface DogDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
